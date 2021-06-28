@@ -1,0 +1,1 @@
+This server acts a CRL distribution point. This is a simple NodeJS app that serves the CRL file to localhost (ex: http://10.0.2.15:3000/cdp.der).
