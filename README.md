@@ -8,8 +8,8 @@ client app:
 
 # How to Run 
 On different terminal:
-For openssl based client app: ./client server_ip server_port . Example: ./client 127.0.0.1 6000
-For openssl based server app: sudo ./server server_port. Example: sudo ./server 6000
-Fot CRL server: node index.js
+For openssl based client app: ./client server_ip server_port . Example: ./client 127.0.0.1 6000 _
+For openssl based server app: sudo ./server server_port. Example: sudo ./server 6000 _
+Fot CRL server: node index.js _
 
 If everything goes right, you will have a secure full duplex server-client chat system running.
