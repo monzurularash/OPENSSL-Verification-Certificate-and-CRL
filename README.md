@@ -7,7 +7,7 @@ The repository source code for a server app, a client app, and CRL server. When 
 ##### client app: g++ -o client crl_client.cpp -L/usr/lib -lcrypto -lssl    
 
 ## How to Run 
-On different terminal:
+##### (run on different terminal)  
 For openssl based client app: 
 ##### ./client server_ip server_port . Example: ./client 127.0.0.1 6000  
 For openssl based server app: 
