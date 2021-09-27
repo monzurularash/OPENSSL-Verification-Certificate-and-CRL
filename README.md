@@ -1,6 +1,8 @@
 # OPENSSL-based-security
 
-The repository source code for a server app, a client app, and CRL server. When the client sends a connection request to a server, the server sends back its own certificate. Now the client verifies if the received certificate is indeed a valid certificate. The client also downloads a copy of the revocation list (CRL) from a CRL server to local cache. The client performs a lookup on the CRL to find out if the certificate is revoked or not.
+Digital certificates are instrumental to public key infrastructure (PKI) and web security. Using digital certificate, a client verifies the authenticity of the server. It’s like verifying “if the server is who it says it is”. Usually Digital certificates expire after one year. But if something goes wrong, for example, the certificate owner’s private key gets lost, then the certificate needs to be revoked before expiration. Usually a Certificate Authority (CA) revokes that certificate and adds it to a blacklist (Certificate Revocation list). Thus it is important that CA publishes the approved certificates as well as revoked certificate list.
+
+The repository contains source code for a server app, a client app, and CRL server. When the client sends a connection request to a server, the server sends back its own certificate. Now the client verifies if the received certificate is indeed a valid certificate. The client also downloads a copy of the revocation list (CRL) from a CRL server to local cache. The client performs a lookup on the CRL to find out if the certificate is revoked or not.
 
 ## How to Build (on Linux OS)
 ##### server app: gcc -o server server.c -L/usr/lib -lcrypto -lssl  
